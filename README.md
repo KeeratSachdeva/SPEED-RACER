@@ -10,13 +10,16 @@ The gameplay is very simple to understand . Just use the left ◀ and right ▶ 
 ### # Technology Stack :
 The entire code has been written in Python3 . I have used the 👉🏻👉🏻pygame module👈🏻👈🏻 for the entire project(GAME) . All the background music and images are added using the pygame module only .
 
-### # A few ScreenShots of the game : 
-#### (HOME SCREEN) --> 
+### # A sneak peek 👀 into the game :
+![SR1](https://user-images.githubusercontent.com/43777725/79114847-f1e8e480-7da1-11ea-8d78-b1649f304d6f.gif)
+
+### # A few ScreenShots 📸 of the game : 
+#### (HOME SCREEN) : 
 ![SS1](https://user-images.githubusercontent.com/43777725/79101130-8bee6400-7d85-11ea-94d3-f55ab652c477.png)
-#### (IN GAME) -->
+#### (IN-GAME) :
 ![SS2](https://user-images.githubusercontent.com/43777725/79105995-4cc51080-7d8f-11ea-8c6c-4e92b7a0ab79.png)
 ![SS3](https://user-images.githubusercontent.com/43777725/79106271-ceb53980-7d8f-11ea-9040-8b370f8eaccb.png)
-#### (GAME OVER SCREEN) -->
+#### (GAME OVER SCREEN) :
 ![SS4](https://user-images.githubusercontent.com/43777725/79106550-5f8c1500-7d90-11ea-9d23-a1bd730fb939.png)
 
 ### # Starting the Game :
@@ -27,5 +30,4 @@ pip install pygame on cmd/terminal.
 
 #### # ⚠⚠WARNING⚠⚠ : Don't delete any of the files and always keep the data folder in the same folder as of Speed Racer.py . Else the code will give errors and the game will not start .
 
-## ThankYou
-
+## Thank You
