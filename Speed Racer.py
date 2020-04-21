@@ -102,7 +102,11 @@ def slowDown(carX,carY,dist,highscore):
         textOnScreen(str(0.00) + ' %', (255, 0, 0), 75, 184, font1)
         gameWindow.blit(rightDisp, (950, 0))
         textOnScreen("HIGHSCORE", (255, 255, 0), 958, 236, font1)
-        textOnScreen(str(highscore) + " Kms", (255, 0, 0), 1005, 342, font1)
+        if(highscore < 10):
+            disp = str(0) + str(highscore)
+        else:
+            disp = str(highscore)
+        textOnScreen(disp + " Kms", (255, 0, 0), 1005, 342, font1)
         gameWindow.blit(road, (400, 0))
         gameWindow.blit(sand,(250,0))
         gameWindow.blit(sand,(800,0))
@@ -201,7 +205,11 @@ def gameLoop():
                             homeScreen()
                 gameWindow.fill((0,0,0))
                 gameWindow.blit(go,(0,0))
-                textOnScreen(str(dist),(255,0,0),540,429,font1)
+                if(dist < 10):
+                    disp = str(0) + str(dist)
+                else:
+                    disp = str(dist)
+                textOnScreen(disp,(255,0,0),540,429,font1)
                 pygame.display.update()
                 clock.tick(fps)
 
@@ -248,12 +256,20 @@ def gameLoop():
             gameWindow.fill((0,0,0))
             gameWindow.blit(leftDisp,(0,0))
             textOnScreen("DISTANCE", (255, 255, 0),27,388,font1)
-            textOnScreen(str(dist) + " Kms",(255,0,0),56,480,font1)
+            if(dist < 10):
+                disp = str(0) + str(dist)
+            else:
+                disp = str(dist)
+            textOnScreen(disp + " Kms",(255,0,0),56,480,font1)
             textOnScreen("FUEL",(255,255,0),73,90,font1)
             textOnScreen(str(fuelper*100) + ' %',(255,0,0),60,184,font1)
             gameWindow.blit(rightDisp, (950, 0))
             textOnScreen("HIGHSCORE",(255,255,0),958,236,font1)
-            textOnScreen(str(highscore) + " Kms",(255,0,0),1005,342,font1)
+            if(highscore < 10):
+                disp = str(0) + str(highscore)
+            else:
+                disp = str(highscore)            
+            textOnScreen(disp + " Kms",(255,0,0),1005,342,font1)
             gameWindow.blit(road,(400,0))
             gameWindow.blit(sand, (250, 0))
             gameWindow.blit(sand, (800, 0))
@@ -364,7 +380,11 @@ def homeScreen():
                     gameLoop()
 
         gameWindow.blit(background,(-6,-32))
-        textOnScreen(str(highscore),(255,0,0),980,9,font1)
+        if(highscore < 10):
+            disp = str(0) + str(highscore)
+        else:
+            disp = str(highscore)
+        textOnScreen(disp,(255,0,0),980,9,font1)
         pygame.display.update()
         clock.tick(fps)
 
